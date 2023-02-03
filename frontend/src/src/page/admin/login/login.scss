@@ -1,0 +1,208 @@
+body {
+    background-color: #f8fafb;
+    color: #212529;
+}
+
+.content {
+    padding: 7rem 0;
+    .contents {
+        .form-group {
+            label {
+                font-size: 12px;
+                display: block;
+                margin-bottom: 0;
+                color: #b3b3b3;
+            }
+            input {
+                background: transparent;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+        .form-control {
+            border: none;
+            padding: 0;
+            font-size: 20px;
+            border-radius: 0;
+
+            &:active {
+                outline: none;
+                box-shadow: none;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+    .bg {
+        .form-group {
+            label {
+                font-size: 12px;
+                display: block;
+                margin-bottom: 0;
+                color: #b3b3b3;
+                transition: 0.3s all ease;
+            }
+            input {
+                background: transparent;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+        .form-control {
+            border: none;
+            padding: 0;
+            font-size: 20px;
+            border-radius: 0;
+
+            &:active {
+                outline: none;
+                box-shadow: none;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .btn {
+        height: 54px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+.control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    .caption {
+        position: relative;
+        color: #888;
+    }
+    input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        top: calc(50% - 10px);
+        left: 0;
+        &:checked {
+            ~ {
+                .control__indicator {
+                    background: #38d39f;
+                    &:after {
+                        display: block;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.control__indicator {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border-radius: 4px;
+    &:after {
+        font-family: "FontAwesome";
+        content: "\f00c";
+        position: absolute;
+        display: none;
+        font-size: 16px;
+        transition: 0.3s all ease;
+    }
+}
+.control--checkbox {
+    .control__indicator {
+        &:after {
+            top: 50%;
+            left: 50%;
+            margin-top: -1px;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.btn-primary {
+    color: #212529;
+    background-color: #38d39f;
+    border-color: #38d39f;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: #29bb8a;
+        border-color: #27b183;
+    }
+}
+
+.btn:disabled {
+    color: #212529;
+    background-color: #38d39f;
+    border-color: #38d39f;
+    box-shadow: none;
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.social-login {
+    display: flex;
+    a {
+        text-decoration: none;
+        position: relative;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 5px;
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    a.google {
+        background: #ea4335;
+    }
+
+    a.facebook {
+        background: #3b5998;
+    }
+
+    a.twitter {
+        background: #1da1f2;
+    }
+}
+
+.icon-facebook:before {
+    font-family: "FontAwesome";
+    content: "\f39e";
+}
+
+.icon-twitter:before {
+    font-family: "FontAwesome";
+    content: "\f099";
+}
+
+.icon-google:before {
+    font-family: "FontAwesome";
+    content: "\f1a0";
+}

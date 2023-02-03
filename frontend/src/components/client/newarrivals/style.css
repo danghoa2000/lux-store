@@ -1,0 +1,16 @@
+.heading img {
+  width: 40px;
+  height: 40px;
+}
+.NewArrivals h4 {
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  height: 35px;
+}
+.NewArrivals span {
+  font-weight: 500;
+}

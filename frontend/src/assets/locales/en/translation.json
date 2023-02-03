@@ -1,0 +1,136 @@
+{
+    "validate": {
+        "required": "The {{name}} field is required.",
+        "email": "The {{name}} must be a valid email address."
+    },
+    "placehoder": "Enter your {{name}}",
+    "account": {
+        "list": {
+            "table": {
+                "user_code": "User code",
+                "role": "Role",
+                "status": "Status",
+                "full_name": "Full name",
+                "email": "Email",
+                "telephone": "Telephone",
+                "birthday": "Birthday",
+                "province": "Province",
+                "district": "District",
+                "commune": "Commune",
+                "address": "Address"
+            }
+        },
+        "full_name": "Full name",
+        "email": "Email",
+        "password": "Password",
+        "comfirm_password": "Comfirm password"
+    },
+    "manufacturer": {
+        "list": {
+            "table": {
+                "manufacturer_code": "Manufacturer code",
+                "status": "Status",
+                "name": "Name",
+                "telephone": "Telephone",
+                "address": "Address"
+            }
+        }
+    },
+    "group_category": {
+        "list": {
+            "table": {
+                "group_category_code": "Group category code",
+                "status": "Status",
+                "name": "Name"
+            }
+        }
+    },
+    "category": {
+        "list": {
+            "table": {
+                "category_code": "Category code",
+                "status": "Status",
+                "name": "Name",
+                "group_category_id": "Group category",
+                "description": "Description",
+                "created_by": "CreatedBy"
+            }
+        }
+    },
+    "coupon": {
+        "list": {
+            "table": {
+                "coupon_code": "Coupon code",
+                "status": "Status",
+                "date_start": "Date start",
+                "date_finish": "Date finish",
+                "price_discount": "Price discount",
+                "qty": "qty"
+            }
+        }
+    },
+
+    "shipping": {
+        "list": {
+            "table": {
+                "province": "Province",
+                "district": "District",
+                "commune": "Commune",
+                "price": "Price"
+            }
+        }
+    },
+    "product": {
+        "list": {
+            "table": {
+                "image": "Image",
+                "product_code": "Product code",
+                "status": "Status",
+                "name": "Name",
+                "price": "Price",
+                "category_id": "Category",
+                "group_category_id": "Group category",
+                "manufacturer_id": "Manufacturer",
+                "description": "Description",
+                "avatar": "Avatar",
+                "qty": "Qty",
+                "sold_qty": "Sold qty"
+            }
+        }
+    },
+    "order": {
+        "list": {
+            "table": {
+                "order_code": "Order code",
+                "customer_name": "Customer name",
+                "status": "Status",
+                "name": "Name",
+                "price": "Price",
+                "price_discount": "Price discount",
+                "address": "Address",
+                "order_date": "Order date",
+                "description": "Description",
+                "avatar": "Avatar",
+                "qty": "Qty"
+            }
+        },
+        "status": {
+            "0": "Pending",
+            "1": "Delivery",
+            "2": "Success",
+            "3": "Cancel"
+        }
+    },
+    "role": {
+        "1": "Manage",
+        "0": "Employee"
+    },
+    "status": {
+        "1": "Active",
+        "0": "Block"
+    },
+    "payment_method": {
+        "1": "Pay on delivery",
+        "2": "Pay with Paypal"
+    }
+}

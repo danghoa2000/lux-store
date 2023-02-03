@@ -1,0 +1,47 @@
+.custom__select {
+    > div {
+        padding: 10px 32px 10px 10px;
+        width: 120px;
+    }
+}
+
+.addvance__search {
+    min-width: 260px;
+    width: 23%;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: fit-content;
+    
+    .list__checkbox {
+        margin: 0;
+        padding: 0;
+        > div {
+            margin: 0;
+            padding: 0;
+            span {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+.product__list {
+    width: calc(100% - 23%);
+
+    > div {
+        margin: -15px -15px 0 0;
+        > div {
+            padding: 0 !important;
+        }
+    }
+}
+
+.css-uob957-MuiListSubheader-root {
+    &.search-title {
+        background-color: unset !important;
+    }
+}
